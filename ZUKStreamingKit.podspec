@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZUKStreamingKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.3'
   s.summary          = 'A Kit for developing Audio and Video'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
