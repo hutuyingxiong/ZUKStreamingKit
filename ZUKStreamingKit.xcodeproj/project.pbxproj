@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B2F6015F1DD1BCE7006B12D5 /* ZUKStreamingKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F6015E1DD1BCE7006B12D5 /* ZUKStreamingKit.m */; };
 		B2F601601DD1BCE7006B12D5 /* ZUKStreamingKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B2F6015D1DD1BCE7006B12D5 /* ZUKStreamingKit.h */; };
-		B2F6017B1DD1F637006B12D5 /* libZUKStreamingKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F6017A1DD1F637006B12D5 /* libZUKStreamingKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +29,6 @@
 		B2F6015D1DD1BCE7006B12D5 /* ZUKStreamingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZUKStreamingKit.h; sourceTree = "<group>"; };
 		B2F6015E1DD1BCE7006B12D5 /* ZUKStreamingKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZUKStreamingKit.m; sourceTree = "<group>"; };
 		B2F601781DD1F637006B12D5 /* ZUKStreamingKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUKStreamingKit.h; sourceTree = "<group>"; };
-		B2F6017A1DD1F637006B12D5 /* libZUKStreamingKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZUKStreamingKit.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F6017B1DD1F637006B12D5 /* libZUKStreamingKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +96,6 @@
 		B2F601791DD1F637006B12D5 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				B2F6017A1DD1F637006B12D5 /* libZUKStreamingKit.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -260,6 +256,7 @@
 		B2F601641DD1BCE7006B12D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DEVELOPMENT_TEAM = CFP9KY4MGC;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -275,6 +272,7 @@
 		B2F601651DD1BCE7006B12D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DEVELOPMENT_TEAM = CFP9KY4MGC;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
