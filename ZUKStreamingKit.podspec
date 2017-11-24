@@ -11,14 +11,14 @@ Pod::Spec.new do |s|
   s.version          = '1.0.5'
   s.summary          = 'A Kit for developing Audio and Video'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  											It is for pushing videos and audiosit is very helpful for pepole to develop the software .
                        DESC
 
   s.homepage         = 'https://github.com/hutuyingxiong/ZUKStreamingKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hutuyingxiong' => '2398585702@qq.com' }
-  s.source           = { :git => 'https://github.com/hutuyingxiong/ZUKStreamingKit.git', :tag => s.version }
+  s.source           = { :git => 'git@github.com:hutuyingxiong/ZUKStreamingKit.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 	s.requires_arc = true 
   s.ios.deployment_target = '8.0'
