@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B293336F1FC9B57F00F9C606 /* libZUKStreamingKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B293336E1FC9B57F00F9C606 /* libZUKStreamingKit.a */; };
 		B2F6015F1DD1BCE7006B12D5 /* ZUKStreamingKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F6015E1DD1BCE7006B12D5 /* ZUKStreamingKit.m */; };
 		B2F601601DD1BCE7006B12D5 /* ZUKStreamingKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B2F6015D1DD1BCE7006B12D5 /* ZUKStreamingKit.h */; };
 /* End PBXBuildFile section */
@@ -25,10 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B293336C1FC9B57F00F9C606 /* ZUKStreamingKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUKStreamingKit.h; sourceTree = "<group>"; };
+		B293336E1FC9B57F00F9C606 /* libZUKStreamingKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZUKStreamingKit.a; sourceTree = "<group>"; };
 		B2F6015A1DD1BCE7006B12D5 /* libZUKStreamingKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZUKStreamingKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F6015D1DD1BCE7006B12D5 /* ZUKStreamingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZUKStreamingKit.h; sourceTree = "<group>"; };
 		B2F6015E1DD1BCE7006B12D5 /* ZUKStreamingKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZUKStreamingKit.m; sourceTree = "<group>"; };
-		B2F601781DD1F637006B12D5 /* ZUKStreamingKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUKStreamingKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,12 +38,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B293336F1FC9B57F00F9C606 /* libZUKStreamingKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B29333691FC9B57F00F9C606 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B293336A1FC9B57F00F9C606 /* Library */,
+			);
+			path = Pod;
+			sourceTree = SOURCE_ROOT;
+		};
+		B293336A1FC9B57F00F9C606 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B293336B1FC9B57F00F9C606 /* include */,
+				B293336D1FC9B57F00F9C606 /* lib */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B293336B1FC9B57F00F9C606 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B293336C1FC9B57F00F9C606 /* ZUKStreamingKit.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B293336D1FC9B57F00F9C606 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B293336E1FC9B57F00F9C606 /* libZUKStreamingKit.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		B2F601511DD1BCE7006B12D5 = {
 			isa = PBXGroup;
 			children = (
@@ -61,43 +97,11 @@
 		B2F6015C1DD1BCE7006B12D5 /* ZUKStreamingKit */ = {
 			isa = PBXGroup;
 			children = (
-				B2F601751DD1F637006B12D5 /* Pod */,
+				B29333691FC9B57F00F9C606 /* Pod */,
 				B2F6015D1DD1BCE7006B12D5 /* ZUKStreamingKit.h */,
 				B2F6015E1DD1BCE7006B12D5 /* ZUKStreamingKit.m */,
 			);
 			path = ZUKStreamingKit;
-			sourceTree = "<group>";
-		};
-		B2F601751DD1F637006B12D5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B2F601761DD1F637006B12D5 /* Library */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		B2F601761DD1F637006B12D5 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				B2F601771DD1F637006B12D5 /* include */,
-				B2F601791DD1F637006B12D5 /* lib */,
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
-		B2F601771DD1F637006B12D5 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				B2F601781DD1F637006B12D5 /* ZUKStreamingKit.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		B2F601791DD1F637006B12D5 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +265,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZUKStreamingKit/Pod/Library/lib",
+					"$(PROJECT_DIR)/Pod/Library/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +282,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZUKStreamingKit/Pod/Library/lib",
+					"$(PROJECT_DIR)/Pod/Library/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

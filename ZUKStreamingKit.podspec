@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZUKStreamingKit'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'A Kit for developing Audio and Video'
   s.description      = <<-DESC
   											It is for pushing videos and audiosit is very helpful for pepole to develop the software .
